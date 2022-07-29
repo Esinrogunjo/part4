@@ -1,0 +1,41 @@
+GET http://localhost:3003/api/blogs
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkZWt1bmxlIiwiaWQiOiI2MjM0NGI3MzEwODcwNzMxNGMwMDMzNjMiLCJpYXQiOjE2NDc1OTQzOTMsImV4cCI6MTY0NzU5Nzk5M30.e2R8b3H_Nd2kUOoXwOpAQIKZvSf8zHTg1P0wJK4UrKI
+
+{
+    "title": "First classs",
+    "author": "Matti Luukkainen",
+    "url": "http://blog.cleancoder.com/uncle-bob/2017/05/05/TestDefinitions.html",
+    "likes": 10
+}
+
+###
+
+POST http://localhost:3003/api/blogs/623457a821d86c1de0c0fa7f
+Content-Type: application/json
+
+{
+   "text": "your article is good"
+}
+
+###
+
+PUT http://localhost:3003/api/blogs/61fbebe0144dd2c99f749289
+Content-Type: application/json
+
+{
+   "title": "iyanda",
+  "author": "Alaweda",
+  "url": "igotoskul.com",
+  "likes": 9,
+  "id": "619248f92210d5f2d7826948"
+}
+
+###
+
+DELETE http://localhost:3003/api/blogs/61f7a3b953fbf407127858ef
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pa2Fzb3phIiwiaWQiOiI2MWY2ZmI4YjMxMTA5NzJiZjZkN2RlYzUiLCJpYXQiOjE2NDM2MTg3MzUsImV4cCI6MTY0MzYyMjMzNX0.Lg1jCYKLs7kDrsxVwrmsDAesmoE_DzlJzKQtqG_2sgM
